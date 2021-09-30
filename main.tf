@@ -153,7 +153,7 @@ resource "azurerm_linux_virtual_machine" "main" {
   disable_password_authentication = false
   network_interface_ids           = [element(azurerm_network_interface.main.*.id, count.index)]
   availability_set_id             = azurerm_availability_set.main.id
-  source_image_id                 = "/subscriptions/6f43e450-06c6-4987-b7e1-a1a28de906e0/resourceGroups/first-project-rg/providers/Microsoft.Compute/images/first-project"
+  source_image_id                 = "/subscriptions/***************************/resourceGroups/first-project-rg/providers/Microsoft.Compute/images/first-project"
 
 
   os_disk {
