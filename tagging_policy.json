@@ -1,0 +1,35 @@
+{
+  "properties": {
+    "displayName": "tagging-policy",
+    "policyType": "Custom",
+    "mode": "All",
+    "metadata": {
+      "category": "Tags",
+      "createdBy": "4ca8a091-1bb5-471e-ac9c-75f54f0f7135",
+      "createdOn": "2021-09-11T12:46:42.2740007Z",
+      "updatedBy": null,
+      "updatedOn": null
+    },
+    "parameters": {},
+    "policyRule": {
+      "if": {
+        "field": "tags['name']",
+        "exists": "false"
+      },
+      "then": {
+        "effect": "deny"
+      }
+    }
+  },
+  "id": "/subscriptions/6f43e450-06c6-4987-b7e1-a1a28de906e0/providers/Microsoft.Authorization/policyDefinitions/ec0764d9-1fc2-4c9d-886b-538f850af774",
+  "type": "Microsoft.Authorization/policyDefinitions",
+  "name": "ec0764d9-1fc2-4c9d-886b-538f850af774",
+  "systemData": {
+    "createdBy": "aliawaji1993@gmail.com",
+    "createdByType": "User",
+    "createdAt": "2021-09-11T12:46:42.1106275Z",
+    "lastModifiedBy": "aliawaji1993@gmail.com",
+    "lastModifiedByType": "User",
+    "lastModifiedAt": "2021-09-11T12:46:42.1106275Z"
+  }
+}
