@@ -1,9 +1,9 @@
 {
     "variables": {
-      "client_id": "e6744ee3-850c-4eb5-b98c-288ff65a8bbe",
-      "client_secret": "rkzLB0x9sobCQweCbQD5_Gh02yLa4CxMyk",
-      "subscription_id": "6f43e450-06c6-4987-b7e1-a1a28de906e0",
-      "tenant_id": "5c79a69e-7840-4aef-9983-130af73f615f"
+      "client_id": "*********************",
+      "client_secret": "*************************",
+      "subscription_id": "*********************************",
+      "tenant_id": "***********************************"
     },
 
     "builders": [{
