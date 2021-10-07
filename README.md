@@ -40,28 +40,17 @@ After you prepare to deploy now you need to deploy Ubuntu Server
     
 **Note:** see server.json file to better understanding
 
-### 4. Packer Template
+### 4. terraform Template
+
+* Run the following command to prepare
+ 
+ <pre>terraform init</pre>
+
 * import vm by using this command
 
 <pre>terraform import azurerm_resource_group.main /subscriptions/6f43e450-06c6-4987-b7e1-a1a28de906e0/resourceGroups/first-project-rg
 </pre>
 
-* create the following resource
-    - Create a Resource Group.
-    - Create a Virtual network
-    - Create a subnet on that virtual network.
-    - Create a Network Security Group
-    - Create a Network Interface.
-    - Create a Public IP.
-    - Create a Load Balancer.
-    - Create a virtual machine availability set.
-
-
- 
-* Run the following command to prepare
- 
- <pre>terraform init</pre>
- 
 * Run the following command to deploy
  
  <pre>terraform plan -out solution.plan</pre>
@@ -74,17 +63,13 @@ After you prepare to deploy now you need to deploy Ubuntu Server
 
 
 ## Output
-***website with a load balancer.***
 
-* Run the following command to check the resources
- 
- <pre> terraform show</pre>
+The problem is back-end address pool association was not found in Network Interface even though it was created in the resource group.
 
-* After end Run the following command to destroy  
+I modified the version to v2.33 but it doesn't work.
 
-<pre> terraform destory</pre>
+Kindly visiting the following link to show my ask 
+
+https://knowledge.udacity.com/questions/708180
 
 
-```python
-
-```
