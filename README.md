@@ -48,7 +48,7 @@ After you prepare to deploy now you need to deploy Ubuntu Server
 
 * import vm by using this command
 
-<pre>terraform import azurerm_resource_group.main /subscriptions/6f43e450-06c6-4987-b7e1-a1a28de906e0/resourceGroups/first-project-rg
+<pre>terraform import azurerm_resource_group.main /subscriptions/***********************/resourceGroups/first-project-rg
 </pre>
 
 * Run the following command to deploy
